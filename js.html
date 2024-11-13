@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="div-id-1">Text strony</div>
+
+    <p id="demo"></p>
+    <script>
+        //alert("Hello world!");
+        //prompt("Jak masz na imię?");
+        //console.log("I am console your browser, hello!");
+        //DOM
+        document.write("I am function write in DOM!");
+        document.write("<h4>I am function write in DOM!</h4>");
+        
+        //my function
+        function myWrite(attr) {
+            document.write(attr);
+        }
+        myWrite("<h1 class='element-h1'>Hello!</h1>");
+        myWrite("<br>");
+        myWrite("<p>World!</p>");
+        myWrite("<br>");
+
+        let h1Element = document.getElementById("div-id-1");
+        document.getElementById("div-id-1").innerHTML += "<div style='color:blue;'>It is add innerHTML</div>";
+        document.getElementById("div-id-1").style.color = "red";
+        h1Element.style.fontSize = "30px";
+
+        //varible
+        let num = 1.45;
+        let str = "string";
+        let bool = true;
+
+        console.log(num);
+        console.log(str);
+        console.log(bool);
+
+        let firstNum = 12;
+        let secondNum = 24;
+
+        firstNum = 1000 + firstNum;
+        console.log(firstNum);
+        firstNum += 100;
+        console.log(firstNum);
+
+    </script>
+</body>
+</html>
